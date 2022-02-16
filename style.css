@@ -1,0 +1,111 @@
+/* DO NOT ALTER THE HTML IN ANY WAY */
+
+section:not(#three) {
+    height: 400px;
+    margin: 10px 0;
+  }
+  #one {
+    background-color: rgb(150, 150, 150);
+  }
+  #two {
+    background-color: rgb(205, 205, 205);
+  }
+  #three {
+    background-color: rgb(150, 150, 150);
+    width: 400px;
+    margin-bottom: 200px;
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #two div {
+    width: 400px;
+  }
+  #red {
+    background-color: red;
+  }
+  #green {
+    background-color: green;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #orange {
+    background-color: orange;
+  }
+  #purple {
+    background-color: purple;
+  }
+  #brown {
+    background-color: brown;
+  }
+  p {
+    margin: 0;
+    background-color: #0C2340;
+    border: 2px solid #AE9142;
+    font-size: 30px;
+    color: #C99700;
+    text-align: center;
+  }
+  p:nth-of-type(even) {
+    color: #00843D;
+  }
+  
+  /* START BELOW THIS LINE */
+
+/* 1 */
+#one {
+    display: flex;
+/* 2 */
+    justify-content: flex-end;
+/* 3 */
+    flex-direction:column;
+/* 4 */
+    align-items: center;
+  }
+/* 5 */
+#two  {
+    display: flex;
+/* 6 */
+align-items: center;
+/* 7 */
+justify-content: space-evenly;
+/* 8 */
+flex-wrap: wrap;
+}  
+
+/* 9 */
+#three {
+  display: grid;
+
+/* 10 */
+grid-template-columns: repeat(4,1fr);
+/* grid-template-columns: repeat 1fr*4; */
+/* grid-template-columns: repeat(4,100px) */
+/* grid-template-columns: 1fr, 1fr, 1fr, 1fr; */
+/* grid-template-columns: repeat(4,25%) */
+
+/* 11 */
+  grid-auto-rows: 100px;
+  
+}
+
+
+
+
+
+
+
+
+  
+  
+
